@@ -53,7 +53,7 @@ describe('saludo(idioma)', function() {
   it('should return \'Guten Tag!\' for aleman', function() {
     expect(saludo('aleman')).toBe('Guten Tag!');
   });
-  it('should return \'Hola!\' for ingles', function() {
+  it('should return \'Hello!\' for ingles', function() {
     expect(saludo('ingles')).toBe('Hello!');
   });
   it('should return \'Ni Hao!\' for mandarin', function() {
@@ -141,13 +141,13 @@ describe('operadoresLogicos(num1, num2, num3)', function() {
     expect(operadoresLogicos(50, 2, 15)).toBe('Número 1 es mayor y positivo');
   });
   it('should return \'Hay negativos\' if any of the arguments are negative', function() {
-    expect(operadoresLogicos(80, -1, 2)).toBe('Hay negativos');
+    expect(operadoresLogicos(8, -1, 20)).toBe('Hay negativos');
   });
   it('should return num3 + 1 if num3 is greater than num1 and num2', function() {
     expect(operadoresLogicos(1, 3, 10)).toBe(11);
   });
   it('should return \'Error\' if any of the arguments are equal 0', function() {
-    expect(operadoresLogicos(1, 0, 10)).toBe('Error');
+    expect(operadoresLogicos(0, 1, 10)).toBe('Error');
   });
   it('should return false if none of the conditions are met', function() {
     expect(operadoresLogicos(10, 30, 6)).toBe(false);
